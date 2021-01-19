@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Age in days</title>
+</head>
+<!--Container for age in days-->
+<body> 
+    <div class="container-1">
+        <h2>Your age in days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-calculate" onclick="ageInDays()">Calculate</button>
+            </div>
+            <div>
+                <button class="btn btn-reset" onclick="reset()">reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result">
+
+            </div>
+        </div>
+    </div> 
+
+    <br><br>
+    <!--Container for Gif generator-->
+    <div class="container-2">
+        <h2>Gif Generator</h2>
+        <button class="btn btn-generate" id="gif-generator" onclick="generateGif()">Generate Gif</button>
+
+        <div class="flex-box-container-2" id="flex-gif-gen">
+            
+        </div>
+    </div>
+
+    <br><br>
+<!--Container for R,P,S-->
+    <div class="container-3">
+        <h2>Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="img/rock.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="paper" src="img/paper.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="img/scissors.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+    <script src="main.js"> </script>
+
+</body>
+</html>
